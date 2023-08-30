@@ -37,13 +37,14 @@ for (i in 1:nrow(tiles)) {
   ## convert to stars
   mask <- st_as_stars(mask)
   
-  ## rasterize each field
+  ## rasterize each field 
+  ## Always check the names of the variables you may have changed
   r_cagb <- st_rasterize(vec_i['c_agb'], template= mask)
   r_cbgb <- st_rasterize(vec_i['c_bgb'], template= mask)
   r_cdw  <- st_rasterize(vec_i['c_dw'], template= mask)
-  r_clitter <- st_rasterize(vec_i['c_litter'], template= mask)
-  r_total <- st_rasterize(vec_i['c_total4INV'], template= mask)
-  r_class <- st_rasterize(vec_i['MapBiomas_C8'], template= mask)
+  r_clitter <- st_rasterize(vec_i['c_littr'], template= mask)
+  r_total <- st_rasterize(vec_i['c_v_4i'], template= mask)
+  r_class <- st_rasterize(vec_i['MpBm_C8'], template= mask)
   
   
   output <-"C:/Users/edriano.souza/GitHub/2022_2_QCN_rectify_v2/Biomass_rectify_c8/Stp1_Rectify_QCN_and_C8-MapBiomas/Data_rectify_class/Raster/"
