@@ -7,23 +7,20 @@
 ##  }
 
 
-
-
-# Configure seu R ####
+# Configure R ####
 gc()
 memory.limit(9999999999)
 
 ### Libraries #########
-
 library(tidyverse)
 library(readxl)
 library(ggplot2)
 library(dplyr)
 library(sf)
+library(dplyr)
 
 ### Your data path #########
 folder_path <- 'Data_official'
-
 folder_path_output <- 'Data_rectify_class'
 
 
@@ -45,10 +42,10 @@ for (file_path in gpkg_files) {
 }
 
 
-
-# Filter and Rectify
-# Relate the classes used in 'QCN' to those in 'dataiomas-C8'
-
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# Filter and Rectify ######################
+# Relate the classes used in 'QCN' to those in 'dataiomas-C8' ######################
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
 ### ###
@@ -121,19 +118,16 @@ aoi_cerrado_rectify<- bind_rows(
   data_Res
 )
 
-
 #rm(list = ls())
 #Write post
 
 
-
-
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 ### ###
 ## Biome Caatinga -----------------------------------------------------------
 ### ###
-
-library(dplyr)
 data<- aoi_caatinga
 
 # Function to filter and assign (map) classes
@@ -184,9 +178,12 @@ aoi_caatinga_rectify<- bind_rows(
 )
 
 #Write post
-
-
 #rm(list = ls())
+
+
+
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
 ### ###
@@ -257,7 +254,8 @@ aoi_mat_atlantic_rectify<- bind_rows(
 )
 
 
-
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
 ### ###
@@ -300,7 +298,9 @@ aoi_pantanal_rectify<- bind_rows(
 )
 
 
-
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
 ### ###
@@ -361,18 +361,16 @@ AOI_ALL_Biomes <- bind_rows(
 
 
 # Path output
-
-
 output_path1 <- "Data_rectify_class/AOI_ALL_Biomes.gpkg"
 
 
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 # Write GPKG and ShP
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
 # Escrever o objeto sf para o Geopackage
 st_write(AOI_ALL_Biomes, dsn = output_path1, driver = "GPKG")
-
-
 
 # Caminho de entrada (arquivo Geopackage)
 input_gpkg <- "Data_rectify_class/AOI_ALL_Biomes.gpkg"
@@ -382,7 +380,6 @@ data_gpkg <- st_read(input_gpkg)
 
 # Caminho de saída para o arquivo Shapefile (.shp)
 output_shp <- "C:/Users/edriano.souza/GitHub/2022_2_QCN_rectify_v2/Biomass_rectify_c8/Stp1_Rectify_QCN_and_C8-MapBiomas/Data_rectify_class/AOI_ALL_Biomes"
-
 
 AOI_ALL_Biomes_2d <- st_zm(AOI_ALL_Biomes)
 # Escrever o objeto do Geopackage para o Shapefile
