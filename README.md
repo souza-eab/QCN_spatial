@@ -2,6 +2,7 @@
 
 Based on the data available (MCTI, 2020), only one column was included. 
 This column is obtained by relating the **IBGE FITO** to the **LULC classes (Mapbiomas-C8, 2023)** and generating the *'MB_C8'* column.  
+
 The original data passed on are geopackages. To ingest it into .EE, all the biomes had to be divided into tiles. Well, like the Amazon process, it was also done using tiles.  Once the data has been processed and is available in .EE. 
 
 
