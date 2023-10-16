@@ -16,13 +16,14 @@
 | `2_Asset_v0-2_rect`     | List all *Rasterize GDAL tiles biomes* files     | 250m & 30m  | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/2_Asset_v0-2_rect' 
 
 
+| ----- | ----------- |-------|--------|---------------------------------------------|
 | `3_Asset_v0-1_rect_AGB`     | List all *Rasterize GDAL tiles biomes* files     | 30m   | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/3_Asset_v0-1_rect_AGB' 
 | `3_Asset_v0-1_rect_BGB`     | List all *Rasterize GDAL tiles biomes* files     | 30m   | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/3_Asset_v0-1_rect_BGB'
 | `3_Asset_v0-1_rect_CDW`     | List all *Rasterize GDAL tiles biomes* files     | 30m   | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/3_Asset_v0-1_rect_CDW'
 | `3_Asset_v0-1_rect_LIT`     | List all *Rasterize GDAL tiles biomes* files     | 30m   | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/3_Asset_v0-1_rect_LIT'
 
 
-
+| ----- | ----------- |-------|--------|---------------------------------------------|
 | `4_Asset_v0-2_rect_AGB`     | List all *Rasterize GDAL tiles biomes* files     | 250 & 30m | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/4_Asset_v0-2_rect_AGB' 
 | `4_Asset_v0-2_rect_BGB`     | List all *Rasterize GDAL tiles biomes* files     | 250 & 30m | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/4_Asset_v0-2_rect_BGB'
 | `4_Asset_v0-2_rect_CDW`     | List all *Rasterize GDAL tiles biomes* files     | 250 & 30m | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/4_Asset_v0-2_rect_CDW'
