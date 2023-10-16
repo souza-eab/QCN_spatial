@@ -19,7 +19,7 @@ Generate asset '1_Asset_v0-1' join all the tiles, rasterize and export asset. No
 Generate asset '2_Asset_v0-2' add all the tiles, rasterize and export asset. Note: All biomes except the Amazon have been rasterized to 30m. The Amazon Biome comes from the EBA (250m). To harmonize the asset, it was kept at 250 and the other biomes were kept at 30m. 
 
 ´´´
-### Note: In general, the v0-1 versions are in 30m, so v0-2 is a combination of 250m (AMZ) and 30m (all biomes). 
+#### Note: In general, the v0-1 versions are in 30m, so v0-2 is a combination of 250m (AMZ) and 30m (all biomes). 
 
 
 
@@ -37,7 +37,7 @@ H1 - Mapbiomas and QCN disagree that they are the same class assume values of th
 After step 3.1, check the version condition and carry out the exports;
 
 ´´´
-### Note: In general, the rectified assets total is eg. '2_Asset_v0-1_rect' and depending on the compartment the desired is added. '3_Asset_v0-1_rect_AGB'
+#### Note: In general, the rectified assets total is eg. '2_Asset_v0-1_rect' and depending on the compartment the desired is added. '3_Asset_v0-1_rect_AGB'
 
 ## +INFO Assets QCN 
 
