@@ -41,7 +41,13 @@ After step 3.1, check the version condition and carry out the exports;
 
 ´´´
 
-#### Note: In general, the rectified assets total is eg. ´2_Asset_v0-1_rect` and depending on the compartment the desired is added. ´3_Asset_v0-1_rect_AGB`.
+#### Note: In general, the rectified assets total is eg. 
+´2_Asset_v0-1_rect` and depending on the compartment the desired is added. 
+
+or +ADD compartments eg.
+´3_Asset_v0-1_rect_AGB`.
+
+
 
 ## +INFO Assets QCN 
 
