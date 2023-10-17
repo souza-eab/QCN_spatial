@@ -8,9 +8,9 @@ This column is obtained by relating the **IBGE FITO** to the **LULC classes (Map
 
 ### Eg. `1_Asset_v0-1`
 
-| ---- | ----- | ----- | ---- | -------- | ..... | ------
-| fito | c_abg | c_bgb | c_dw | c_litter | total |  MB_C8
-| ---- | ----- | ----- | ---- | -------- | ..... | ------
+
+| fito   | c_abg | c_bgb | c_dw | c_litter | total |  MB_C8
+| ----   | ----- | ----- | ---- | -------- | ------ | ------
 | `Aa`   | 117.3 | 11.7  | 9.5  | 6.8      | ..... |   3     
 | `Ab`   | 133.9 | 13.4  | 10.9 | 7.7      | ..... |   3           
 | `..`   | ..... | ..... | .... | ........ | ..... | ......
