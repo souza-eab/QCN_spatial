@@ -41,7 +41,7 @@ Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
 ´´--- root path: 'pathprojects/mapbiomas-workspace/SEEG/2023/QCN'´´
 | Asset | Description | Scale | format | Complete path | 
 | ----- | ----------- |-------|--------|---------------------------------------------|
-| `0_Data_Official_tiles`       | tile files from all biomes for *rasterize (GDAL)*                 | 30m   | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/0_Data_Official_tiles' 
+| `0_Data_Official_tiles`       | tile files from all biomes raster (GDAL)*                         | 30m   | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/0_Data_Official_tiles' 
 | `0_pastVegetation_v0-1`       | tile files from biome Amazon for rasterize (.EE)                  | 30m   | 'ee.Img'  | 'projects/mapbiomas-workspace/SEEG/2023/QCN/0_pastVegetation_v0-1' 
 | `0_pastVegetation_v0-2`       | tile files from biome Amazon for rasterize (.EE)                  | 250m  | 'ee.Img'  | 'projects/mapbiomas-workspace/SEEG/2023/QCN/0_pastVegetation_v0-2' 
 | `1_Asset_v0-1`                | Official data QCN - BR                                            | 30m   | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/1_Asset_v0-1' 
@@ -58,7 +58,7 @@ Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
 | `4_Asset_v0-2_rect_LIT`       | .........                rectified LIT by weighted average ´FITO´ | 250 & 30m | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/4_Asset_v0-2_rect_LIT'
 
 ```javascript
-// Expect biome AMZ
+// *Expect biome AMZ
 ```
 
 
