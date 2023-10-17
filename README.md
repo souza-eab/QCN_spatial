@@ -1,11 +1,8 @@
 # QCN_spatial
 
-Based on the data available (MCTI, 2020), only one column was included. 
+Based on the data available  `1_Asset_v0-1` (MCTI, 2020), only one column was included. 
 This column is obtained by relating the **IBGE FITO** to the **LULC classes (Mapbiomas-C8, 2023)** and generating the *'MB_C8'* column.  
-
-```javascript
-**IBGE FITO** to the **LULC classes (Mapbiomas-C8, 2023)
-```
+`**IBGE FITO** to the **LULC classes (Mapbiomas-C8, 2023)`
 
 
 | fito  | MB_C8       | ...   |   +    |                   ...                       | 
@@ -16,10 +13,7 @@ This column is obtained by relating the **IBGE FITO** to the **LULC classes (Map
 | Pa    | 11          |-------|--------|---------------------------------------------|
 
 
-and generating the *'MB_C8'* column.  
-
 The original data passed on are geopackages. To ingest it into .EE, all the biomes had to be divided into tiles. Well, like the Amazon process, it was also done using tiles. Once the data has been processed and is available in .EE. 
-
 
 
 # Results Assets
@@ -47,6 +41,7 @@ The original data passed on are geopackages. To ingest it into .EE, all the biom
 | ----- | ----------- |-------|--------|---------------------------------------------|
 # *Expect biome AMZ*
 | ----- | ----------- |-------|--------|---------------------------------------------|
+
 
 
 ## Step 0.1: 
