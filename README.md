@@ -21,7 +21,7 @@ Once the data has been processed and is available in .EE, the path to accessing 
 
 ###  ---> 📂Folder QCN - root path: 
 ```javascript
-'var c_total = 'projects/mapbiomas-workspace/SEEG/2023/QCN'
+var path = 'projects/mapbiomas-workspace/SEEG/2023/QCN'
 ```
 
 | Asset | Description | Scale | format | Complete path | 
