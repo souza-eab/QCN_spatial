@@ -4,18 +4,16 @@ Based on the data available  `1_Asset_v0-1` (MCTI, 2020), only one column was in
 This column is obtained by relating the **IBGE FITO** to the **LULC classes (Mapbiomas-C8, 2023)** and generating the *'MB_C8'* column.  
 `**IBGE FITO** to the **LULC classes (Mapbiomas-C8, 2023)`
 
-
-
-### Eg. `1_Asset_v0-1`
-
-
 | fito   | c_abg | c_bgb | c_dw | c_litter | total |  MB_C8
 | ----   | ----- | ----- | ---- | -------- | ------ | ------
 | `Aa`   | 117.3 | 11.7  | 9.5  | 6.8      | ..... |   3     
 | `Ab`   | 133.9 | 13.4  | 10.9 | 7.7      | ..... |   3           
 | `..`   | ..... | ..... | .... | ........ | ..... | ......
-| `Pa`   |  43.9 | 16.2  |  4.8 | 1.6      | ..... |   11         
+| `Pa`   |  43.9 | 16.2  |  4.8 | 1.6      | ..... |   11     
 
+```javascript
+Eg. `1_Asset_v0-1`
+```
 
 The original data are geopackages. To ingest assets tile it into Earth Engine (.EE), all the biomes had to be divided into tiles. Well, like the Amazon process, it was also done using tiles.
 
