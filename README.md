@@ -15,8 +15,9 @@ This column is obtained by relating the **IBGE FITO** to the **LULC classes (Map
 
 The original data passed on are geopackages. To ingest it into .EE, all the biomes had to be divided into tiles. Well, like the Amazon process, it was also done using tiles. Once the data has been processed and is available in .EE. 
 
-
+```javascript
 # Results Assets
+```
 
 ## +INFO Assets QCN 
 
