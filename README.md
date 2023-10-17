@@ -22,7 +22,7 @@ Once the data has been processed and is available in .EE, the path to accessing 
 ###  ---> 📂Folder QCN - root path: 
 ```javascript
 'var c_total = 'projects/mapbiomas-workspace/SEEG/2023/QCN'
-´´´
+```
 
 | Asset | Description | Scale | format | Complete path | 
 | ----- | ----------- |-------|--------|---------------------------------------------|
@@ -58,10 +58,9 @@ var data_Total_carbon = ee.ImageCollection('projects/mapbiomas-workspace/SEEG/20
 var visFlo = {min: 0,max: 200,
   palette:["#fde725","#a0da39","#4ac16d","#1fa187","#277f8e","#365c8d","#46327e","#440154"]};
 Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
-
 ```
-[Link to script - 'total' ](https://code.earthengine.google.com/e76bbf6452f9ac4f647af3db75d3173e)
 
+[Link to script - 'total' ](https://code.earthengine.google.com/e76bbf6452f9ac4f647af3db75d3173e)
 
 
 [Link to script - 'c_agb'](https://code.earthengine.google.com/0656bcd6a1bfc6ae3b3ea36a16b4671c)
