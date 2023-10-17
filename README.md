@@ -4,7 +4,10 @@ Based on the data available (MCTI, 2020), only one column was included.
 This column is obtained by relating the **IBGE FITO** to the **LULC classes (Mapbiomas-C8, 2023)** and generating the *'MB_C8'* column.  
 
 ```javascript
-# eg.
+**IBGE FITO** to the **LULC classes (Mapbiomas-C8, 2023)
+```
+
+
 | fito  | MB_C8       | ...   |   +    |                   ...                       | 
 | ----- | ----------- |-------|--------|---------------------------------------------|
 | Aa    | 3           |-------|--------|---------------------------------------------|
@@ -12,7 +15,6 @@ This column is obtained by relating the **IBGE FITO** to the **LULC classes (Map
 | ..    | .           |-------|--------|---------------------------------------------|
 | Pa    | 11          |-------|--------|---------------------------------------------|
 
-```
 
 and generating the *'MB_C8'* column.  
 
