@@ -11,10 +11,10 @@ This column is obtained by relating the **IBGE FITO** to the **LULC classes (Map
 | ---- | ----- | ----- | ---- | -------- | ..... | ------
 | fito | c_abg | c_bgb | c_dw | c_litter | total |  MB_C8
 | ---- | ----- | ----- | ---- | -------- | ..... | ------
-| Aa   | 117.3 | 11.7  | 9.5  | 6.8      | ..... |   3     
-| Ab   | 133.9 | 13.4  | 10.9 | 7.7      | ..... |   3           
-| ..   | ..... | ..... | .... | ........ | ..... | ......
-| Pa   |  43.9 | 16.2  |  4.8 | 1.6      | ..... |   11         
+| `Aa`   | 117.3 | 11.7  | 9.5  | 6.8      | ..... |   3     
+| `Ab`   | 133.9 | 13.4  | 10.9 | 7.7      | ..... |   3           
+| `..`   | ..... | ..... | .... | ........ | ..... | ......
+| `Pa`   |  43.9 | 16.2  |  4.8 | 1.6      | ..... |   11         
 
 
 The original data are geopackages. To ingest assets tile it into Earth Engine (.EE), all the biomes had to be divided into tiles. Well, like the Amazon process, it was also done using tiles.
