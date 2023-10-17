@@ -19,8 +19,11 @@ The original data are geopackages. To ingest assets tile it into Earth Engine (.
 
 Once the data has been processed and is available in .EE, the path to accessing are:
 
-###   📂Folder QCN
-´´--- root path: 'projects/mapbiomas-workspace/SEEG/2023/QCN'´´
+###  ---> 📂Folder QCN - root path: 
+```javascript
+'var c_total = 'projects/mapbiomas-workspace/SEEG/2023/QCN'
+´´´
+
 | Asset | Description | Scale | format | Complete path | 
 | ----- | ----------- |-------|--------|---------------------------------------------|
 | `0_Data_Official_tiles`       | tile files from all biomes raster (GDAL)*                         | 30m          | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/0_Data_Official_tiles' 
