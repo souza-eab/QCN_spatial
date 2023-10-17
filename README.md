@@ -31,8 +31,8 @@ var visFlo = {min: 0,max: 200,
 Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
 
 ```
-
 [Link to script](https://code.earthengine.google.com/e76bbf6452f9ac4f647af3db75d3173e)
+
 
 ## 📂Folder QCN
 ´´--- root path: 'pathprojects/mapbiomas-workspace/SEEG/2023/QCN'´´
@@ -53,11 +53,10 @@ Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
 | `4_Asset_v0-2_rect_BGB`       | .........                rectified BGB by weighted average ´FITO´ | 250 & 30m | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/4_Asset_v0-2_rect_BGB'
 | `4_Asset_v0-2_rect_CDW`       | .........                rectified CDW by weighted average ´FITO´ | 250 & 30m | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/4_Asset_v0-2_rect_CDW'
 | `4_Asset_v0-2_rect_LIT`       | .........                rectified LIT by weighted average ´FITO´ | 250 & 30m | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/4_Asset_v0-2_rect_LIT'
-| ----- | ----------- |-------|--------|---------------------------------------------|
+
+```javascript
 # *Expect biome AMZ*
-| ----- | ----------- |-------|--------|---------------------------------------------|
-
-
+```
 
 
 ## Workflow
