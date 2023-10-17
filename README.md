@@ -15,11 +15,25 @@ This column is obtained by relating the **IBGE FITO** to the **LULC classes (Map
 
 The original data passed on are geopackages. To ingest it into .EE, all the biomes had to be divided into tiles. Well, like the Amazon process, it was also done using tiles. Once the data has been processed and is available in .EE. 
 
-```javascript
 # Results Assets
+
+
+```javascript
+// +INFO Assets QCN (eg.total)
+// Data official (total)
+var data_Total_carbon = ee.ImageCollection('projects/mapbiomas-workspace/SEEG/2023/QCN/1_Asset_v0-1').select('total')
+  .filterMetadata('biome', 'equals', 'amazonia')
+  .mosaic();
+  //.clip(AOI);
+// MapaddLayer
+var visFlo = {min: 0,max: 200,
+  palette:["#fde725","#a0da39","#4ac16d","#1fa187","#277f8e","#365c8d","#46327e","#440154"]};
+Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
+
 ```
 
-## +INFO Assets QCN 
+[Link to script](https://code.earthengine.google.com/e76bbf6452f9ac4f647af3db75d3173e)
+
 
 ´´--- root path: 'pathprojects/mapbiomas-workspace/SEEG/2023/QCN'´´
 | Asset | Description | Scale | format | Complete path | 
