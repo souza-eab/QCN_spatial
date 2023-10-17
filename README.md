@@ -19,27 +19,6 @@ The original data are geopackages. To ingest assets tile it into Earth Engine (.
 
 Once the data has been processed and is available in .EE, the path to accessing are:
 
-
-```javascript
-// +INFO Assets QCN (eg.total)
-// Data official (total)
-var data_Total_carbon = ee.ImageCollection('projects/mapbiomas-workspace/SEEG/2023/QCN/1_Asset_v0-1')
-  .select('total') //.select('c_agb'; 'c_bgb'; 'c_dw'; 'c_litter'; '...'; 'total')
-  .filterMetadata('biome', 'equals', 'amazonia')
-  .mosaic();
-  //.clip(AOI);
-// MapaddLayer
-var visFlo = {min: 0,max: 200,
-  palette:["#fde725","#a0da39","#4ac16d","#1fa187","#277f8e","#365c8d","#46327e","#440154"]};
-Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
-
-```
-[Link to script - 'total' ](https://code.earthengine.google.com/e76bbf6452f9ac4f647af3db75d3173e)
-
-
-
-[Link to script - 'c_agb'](https://code.earthengine.google.com/0656bcd6a1bfc6ae3b3ea36a16b4671c)
-
 ## 📂Folder QCN
 ´´--- root path: 'pathprojects/mapbiomas-workspace/SEEG/2023/QCN'´´
 | Asset | Description | Scale | format | Complete path | 
@@ -64,6 +43,26 @@ Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
 // *Expect biome AMZ
 ```
 
+
+```javascript
+// +INFO Assets QCN (eg.total)
+// Data official (total)
+var data_Total_carbon = ee.ImageCollection('projects/mapbiomas-workspace/SEEG/2023/QCN/1_Asset_v0-1')
+  .select('total') //.select('c_agb'; 'c_bgb'; 'c_dw'; 'c_litter'; '...'; 'total')
+  .filterMetadata('biome', 'equals', 'amazonia')
+  .mosaic();
+  //.clip(AOI);
+// MapaddLayer
+var visFlo = {min: 0,max: 200,
+  palette:["#fde725","#a0da39","#4ac16d","#1fa187","#277f8e","#365c8d","#46327e","#440154"]};
+Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
+
+```
+[Link to script - 'total' ](https://code.earthengine.google.com/e76bbf6452f9ac4f647af3db75d3173e)
+
+
+
+[Link to script - 'c_agb'](https://code.earthengine.google.com/0656bcd6a1bfc6ae3b3ea36a16b4671c)
 
 ## Workflow
    
