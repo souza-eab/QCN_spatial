@@ -13,7 +13,7 @@ This column is obtained by relating the **IBGE FITO** to the **LULC classes (Map
 | Pa    | 11          |-------|--------|---------------------------------------------|
 
 
-The original data are geopackages. To ingest assets tile it into.EE, all the biomes had to be divided into tiles. Well, like the Amazon process, it was also done using tiles.
+The original data are geopackages. To ingest assets tile it into Earth Engine (.EE), all the biomes had to be divided into tiles. Well, like the Amazon process, it was also done using tiles.
 
 # Results Assets
 
