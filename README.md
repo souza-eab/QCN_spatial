@@ -19,7 +19,7 @@ The original data are geopackages. To ingest assets tile it into Earth Engine (.
 
 Once the data has been processed and is available in .EE, the path to accessing are:
 
-## 📂Folder QCN
+###   📂Folder QCN
 ´´--- root path: 'pathprojects/mapbiomas-workspace/SEEG/2023/QCN'´´
 | Asset | Description | Scale | format | Complete path | 
 | ----- | ----------- |-------|--------|---------------------------------------------|
