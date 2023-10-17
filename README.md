@@ -57,7 +57,7 @@ Map.addLayer(data_Total_carbon, visFlo,"data_Total_carbon");
 | `4_Asset_v0-2_rect_LIT`       | .........                rectified LIT by weighted average ´FITO´ | 250 & 30m | 'ee.ImgC' | 'projects/mapbiomas-workspace/SEEG/2023/QCN/4_Asset_v0-2_rect_LIT'
 
 ```javascript
-# *Expect biome AMZ*
+// Expect biome AMZ
 ```
 
 
