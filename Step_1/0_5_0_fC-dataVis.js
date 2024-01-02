@@ -5,82 +5,104 @@ var fC = ee.FeatureCollection("projects/mapbiomas-workspace/SEEG/2023/QCN/0_2_AO
 
 // Obter uma lista de classes únicas
 var classes = fC.aggregate_array('C_prtvz_remap').distinct();
-print("Classes:", classes); // Verificar os valores únicos
+//print("Classes:", classes); // Verificar os valores únicos
 
 var classF = fC.aggregate_histogram('C_prtvz_remap');
-print("Valores na propriedade 'C_prtvz_remap:", classF);
+//print("Valores na propriedade 'C_prtvz_remap:", classF);
 
 
 // Filtrar os recursos com valor 'Aa' na propriedade 'C_prtvz_remap'
-var filteredFCAa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Aa')); 
-var filteredFCAb = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ab'));
-var filteredFCAm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Am'));
-var filteredFCAr = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ar'));
-var filteredFCAs = fC.filter(ee.Filter.eq('C_prtvz_remap', 'As'));
-var filteredFCCa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ca'));
-var filteredFCCb = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Cb'));
-var filteredFCD = fC.filter(ee.Filter.eq('C_prtvz_remap', 'D'));
-var filteredFCDa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Da'));
-var filteredFCDb = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Db'));
-var filteredFCDl = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Dl'));
-var filteredFCDm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Dm'));
-var filteredFCDn = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Dn'));
-var filteredFCDs = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ds'));
-var filteredFCE = fC.filter(ee.Filter.eq('C_prtvz_remap', 'E'));
-var filteredFCEm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'EM'));
-var filteredFCEn = fC.filter(ee.Filter.eq('C_prtvz_remap', 'EN'));
-var filteredFCEp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'EP'));
-var filteredFCEa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ea'));
-var filteredFCEg = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Eg'));
-var filteredFCEp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ep'));
-var filteredFCF = fC.filter(ee.Filter.eq('C_prtvz_remap', 'F'));
-var filteredFCFa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Fa'));
-var filteredFCFb = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Fb'));
-var filteredFCFm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Fm'));
-var filteredFCFs = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Fs'));
-var filteredFCL = fC.filter(ee.Filter.eq('C_prtvz_remap', 'L'));
-var filteredFCLo = fC.filter(ee.Filter.eq('C_prtvz_remap', 'LO'));
-var filteredFCLa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'La'));
-var filteredFCLb = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Lb'));
-var filteredFCLd = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ld'));
-var filteredFCLg = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Lg'));
-var filteredFCM  = fC.filter(ee.Filter.eq('C_prtvz_remap', 'M'));
-var filteredFCMa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ma'));
-var filteredFCMl = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ml'));
-var filteredFCMm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Mm'));
-var filteredFCMs = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ms'));
-var filteredFCNm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'NM'));
-var filteredFCNp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'NP'));
-var filteredFCOm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'OM'));
-var filteredFCOn = fC.filter(ee.Filter.eq('C_prtvz_remap', 'ON'));
-var filteredFCOp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'OP'));
-var filteredFCP  = fC.filter(ee.Filter.eq('C_prtvz_remap', 'P'));
-var filteredFCPa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Pa'));
-var filteredFCPf = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Pf'));
-var filteredFCPm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Pm'));
-var filteredFCRl = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Rl'));
-var filteredFCRm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Rm'));
-var filteredFCS  = fC.filter(ee.Filter.eq('C_prtvz_remap', 'S'));
-var filteredFCSm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'SM'));
-var filteredFCSn = fC.filter(ee.Filter.eq('C_prtvz_remap', 'SN'));
-var filteredFCSo = fC.filter(ee.Filter.eq('C_prtvz_remap', 'SO'));
-var filteredFCSp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'SP'));
-var filteredFCSt = fC.filter(ee.Filter.eq('C_prtvz_remap', 'ST'));
-var filteredFCStn= fC.filter(ee.Filter.eq('C_prtvz_remap', 'STN'));
-var filteredFCSa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Sa'));
-var filteredFCSd = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Sd'));
-var filteredFCSg = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Sg'));
-var filteredFCSp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Sp'));
-var filteredFCT  = fC.filter(ee.Filter.eq('C_prtvz_remap', 'T'));
-var filteredFCTn = fC.filter(ee.Filter.eq('C_prtvz_remap', 'TN'));
-var filteredFCTa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ta'));
-var filteredFCTd = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Td'));
-var filteredFCTg = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Tg'));
-var filteredFCTp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Tp'));
-var filteredFCNULL = fC.filter(ee.Filter.eq('C_prtvz_remap', '')); //Null 
+var filteredFC_Aa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Aa')); 
+var filteredFC_Ab = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ab'));
+var filteredFC_Am = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Am'));
+var filteredFC_Ar = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ar'));
+var filteredFC_As = fC.filter(ee.Filter.eq('C_prtvz_remap', 'As'));
+var filteredFC_Ca = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ca'));
+var filteredFC_Cb = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Cb'));
+var filteredFC_D = fC.filter(ee.Filter.eq('C_prtvz_remap', 'D'));
+var filteredFC_Da = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Da'));
+var filteredFC_Db = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Db'));
+var filteredFC_Dl = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Dl'));
+var filteredFC_Dm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Dm'));
+var filteredFC_Dn = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Dn'));
+var filteredFC_Ds = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ds'));
+var filteredFC_E = fC.filter(ee.Filter.eq('C_prtvz_remap', 'E'));
+var filteredFC_Em = fC.filter(ee.Filter.eq('C_prtvz_remap', 'EM'));
+var filteredFC_En = fC.filter(ee.Filter.eq('C_prtvz_remap', 'EN'));
+var filteredFC_Ep = fC.filter(ee.Filter.eq('C_prtvz_remap', 'EP'));
+var filteredFC_Ea = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ea'));
+var filteredFC_Eg = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Eg'));
+var filteredFC_Ep = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ep'));
+var filteredFC_F = fC.filter(ee.Filter.eq('C_prtvz_remap', 'F'));
+var filteredFC_Fa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Fa'));
+var filteredFC_Fb = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Fb'));
+var filteredFC_Fm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Fm'));
+var filteredFC_Fs = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Fs'));
+var filteredFC_L = fC.filter(ee.Filter.eq('C_prtvz_remap', 'L'));
+var filteredFC_Lo = fC.filter(ee.Filter.eq('C_prtvz_remap', 'LO'));
+var filteredFC_La = fC.filter(ee.Filter.eq('C_prtvz_remap', 'La'));
+var filteredFC_Lb = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Lb'));
+var filteredFC_Ld = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ld'));
+var filteredFC_Lg = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Lg'));
+var filteredFC_M  = fC.filter(ee.Filter.eq('C_prtvz_remap', 'M'));
+var filteredFC_Ma = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ma'));
+var filteredFC_Ml = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ml'));
+var filteredFC_Mm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Mm'));
+var filteredFC_Ms = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ms'));
+var filteredFC_Nm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'NM'));
+var filteredFC_Np = fC.filter(ee.Filter.eq('C_prtvz_remap', 'NP'));
+var filteredFC_Om = fC.filter(ee.Filter.eq('C_prtvz_remap', 'OM'));
+var filteredFC_On = fC.filter(ee.Filter.eq('C_prtvz_remap', 'ON'));
+var filteredFC_Op = fC.filter(ee.Filter.eq('C_prtvz_remap', 'OP'));
+var filteredFC_P  = fC.filter(ee.Filter.eq('C_prtvz_remap', 'P'));
+var filteredFC_Pa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Pa'));
+var filteredFC_Pf = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Pf'));
+var filteredFC_Pm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Pm'));
+var filteredFC_Rl = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Rl'));
+var filteredFC_Rm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Rm'));
+var filteredFC_S  = fC.filter(ee.Filter.eq('C_prtvz_remap', 'S'));
+var filteredFC_Sm = fC.filter(ee.Filter.eq('C_prtvz_remap', 'SM'));
+var filteredFC_Sn = fC.filter(ee.Filter.eq('C_prtvz_remap', 'SN'));
+var filteredFC_So = fC.filter(ee.Filter.eq('C_prtvz_remap', 'SO'));
+var filteredFC_Sp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'SP'));
+var filteredFC_St = fC.filter(ee.Filter.eq('C_prtvz_remap', 'ST'));
+var filteredFC_Stn= fC.filter(ee.Filter.eq('C_prtvz_remap', 'STN'));
+var filteredFC_Sa = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Sa'));
+var filteredFC_Sd = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Sd'));
+var filteredFC_Sg = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Sg'));
+var filteredFC_Sp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Sp'));
+var filteredFC_T  = fC.filter(ee.Filter.eq('C_prtvz_remap', 'T'));
+var filteredFC_Tn = fC.filter(ee.Filter.eq('C_prtvz_remap', 'TN'));
+var filteredFC_Ta = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Ta'));
+var filteredFC_Td = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Td'));
+var filteredFC_Tg = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Tg'));
+var filteredFC_Tp = fC.filter(ee.Filter.eq('C_prtvz_remap', 'Tp'));
+var filteredFC_NULL = fC.filter(ee.Filter.eq('C_prtvz_remap', '')); //Null 
 
 // Adicionar os recursos filtrados ao mapa
-Map.addLayer(filteredFCSa, {}, 'Recursos com valor "S"');
+//Map.addLayer(filteredFC_Ld, {}, 'Recursos com valor "Ld"');
+
+
+
+/// Em desenvolviemento
+
+
+var fC = ee.FeatureCollection("projects/mapbiomas-workspace/SEEG/2023/QCN/0_2_AOI_BR_QCN_FITO-LULC_v1");
+
+// Lista de classes presentes na propriedade 'C_prtvz_remap'
+var classes = [
+  'Aa', 'Ab', 'Am', 'Ar', 'As', 'Ca', 'Cb', 'D', 'Da', 'Db', 'Dl', 'Dm', 'Dn', 'Ds',
+  'E', 'EM', 'EN', 'EP', 'Ea', 'Eg', 'Ep', 'F', 'Fa', 'Fb', 'Fm', 'Fs', 'L', 'LO', 'La',
+  'Lb', 'Ld', 'Lg', 'M', 'Ma', 'Ml', 'Mm', 'Ms', 'NM', 'NP', 'OM', 'ON', 'OP', 'P',
+  'Pa', 'Pf', 'Pm', 'Rl', 'Rm', 'S', 'SM', 'SN', 'SO', 'SP', 'ST', 'STN', 'Sa', 'Sd',
+  'Sg', 'Sp', 'T', 'TN', 'Ta', 'Td', 'Tg', 'Tp'
+];
+
+// Iterar sobre as classes e adicionar cada camada filtrada ao mapa
+for (var i = 0; i < classes.length; i++) {
+  var filteredFC = fC.filter(ee.Filter.eq('C_prtvz_remap', classes[i]));
+  Map.addLayer(filteredFC, {}, 'Classes fito_QCN "' + classes[i] + '"');
+}
 
 /*
 // Obter as categorias únicas da propriedade 'c_pretvizi'
